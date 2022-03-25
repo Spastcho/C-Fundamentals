@@ -1,0 +1,46 @@
+
+
+#include <iostream>
+
+int main()
+{
+	float firstNum = 0.0f;
+	float secondNum = 0.0f;
+	float thirdNum = 0.0f;
+
+	std::cin >> firstNum >> secondNum >> thirdNum;
+
+	if (firstNum == 0.0f || secondNum == 0.0f || thirdNum == 0.0f)
+	{
+		std::cout << '+' << std::endl;
+		return 0;
+	}
+
+	int countNegative = 0;
+
+	if (firstNum < 0)
+	{
+		countNegative++;
+	}
+	if (secondNum < 0)
+	{
+		countNegative++;
+	}
+	if (thirdNum < 0)
+	{
+		 countNegative++;
+	}
+	
+	if (countNegative == 2 || countNegative == 0)
+	{
+		std::cout << '+';
+	}
+	else 
+	{
+		std::cout << '-';
+	}
+
+	return 0;
+
+}
+
