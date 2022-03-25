@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+int main()
+{
+    int a;
+    int b;
+    std::cin >> a >> b;
+
+    while (b != 0) 
+    {
+        int num = b;
+        b = a % b;
+        a = num;
+    }
+
+    std::cout << a << std::endl;
+
+    return 0;
+
+}
+
