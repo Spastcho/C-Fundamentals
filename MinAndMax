@@ -1,0 +1,35 @@
+
+#include <iostream>
+#include <cstdint>
+
+int main()
+{
+	int n = 0;
+	int m = 0;
+
+	std::cin >> n;
+	
+	int min = INT32_MAX;
+	int max = INT32_MIN;
+
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> m;
+
+		if (m > max)
+		{
+			max = m;
+		}
+		if (m < min)
+		{
+			min = m;
+		}
+	}
+
+	std::cout << min << ' ' << max << std::endl;
+
+	return 0;
+
+}
+
